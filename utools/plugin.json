@@ -1,0 +1,28 @@
+{
+  "version": "0.0.1",
+  "pluginName": "插件名称",
+  "description": "插件描述",
+  "author": "插件作者",
+  "main": "index.html",
+  "logo": "logo.png",
+  "preload": "preload.js",
+  "development": {
+      "main": "http://localhost:8000/index.html",
+      "logo": "./logo.png",
+      "buildPath": "./../dist/",
+      "preload": "./preload.js"
+  },
+  "features":[{
+    "code": "code",
+    "explain": "描述",
+    "cmds": [
+      "命令1",
+      "命令2",
+      {
+        "type": "regex",
+        "match": "/^(?:https?:\\/\\/)?(?:(?:(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)){3})|(?:(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)(?:\\.(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)*(?:\\.(?:[a-z\\u00a1-\\uffff]{2,}))\\.?)(?:[/?#][^\\s\"]*)?$/i",
+        "label": "查IP"
+      }
+    ]
+  }]
+}
